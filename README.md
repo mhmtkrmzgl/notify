@@ -1,4 +1,0 @@
-notify
-======
-
-Basic ajax notifyer
