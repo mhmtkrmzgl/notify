@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Basic JQuery Notify Function (by mhmtkrmzgl)</title>
+        <meta http-equiv="content-language" content="tr" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="notify.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("button#onay").click(function(){$.notify('İşleminiz Başarıyla Gerçekleşmiştir.', 'onay');});
+                $("button#uyari").click(function(){$.notify('İşleminiz gerçekleşti, fakat bazı hatalar oluştu.', 'attent');});
+                $("button#reddet").click(function(){$.notify('Üzgünüz, bir hata oluştu !', 'hata');});
+            });
+        </script>
+        <style type="text/css">
+            .buton{
+                display: block;
+                float: left;
+                margin-top: 150px;
+                margin-left: 50px;
+                width: 180px;
+                height: 50px;
+                border-radius: 5px;
+                background: #333;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                outline: 0;
+                box-shadow: 3px 5px 4px #555;
+                font: 18px Verdana;
+            }
+        </style>
+    </head>
+    <body>    
+        <button id="onay" class="buton">Onayla</button>
+        <button id="uyari" class="buton">Uyarı</button>
+        <button id="reddet" class="buton">Reddet</button>
+    </body>
+</html>
+
+  
